@@ -25,7 +25,7 @@ public class Main {
 
         System.out.println("Задача 1.3");
         int minInputArray1 = 0;
-        for (final int current : inputArray1) {
+        for (int current : inputArray1) {
             minInputArray1 = 3000;
             if (current < minInputArray1) {
                 minInputArray1 = current;
@@ -34,8 +34,7 @@ public class Main {
         System.out.println(minInputArray1);
 
         System.out.println("Задача 1.4");
-        int avarageInputArray1 = 0;
-        avarageInputArray1 = sum / inputArray1.length;
+        int avarageInputArray1 = sum / inputArray1.length;
         System.out.println(avarageInputArray1);
 
 
@@ -65,7 +64,7 @@ public class Main {
         boolean [] outputArray3= new boolean[5];
         int k=0;
         for  (int element : inputArray3) {
-            if (k>=5000){
+            if (element>=5000){
                 outputArray3 [k]=true;
 
             }
@@ -84,7 +83,7 @@ public class Main {
         boolean [] outputArray4= new boolean[5];
         int m=0;
         for  (int balans : inputArray4) {
-            if (m>0) {
+            if (balans>0) {
 
                 outputArray4[m] = true;
                 m++;
@@ -103,8 +102,13 @@ public class Main {
         boolean [] outputArray5= new boolean [5];
         int n=0;
         for  (int profit : inputArray5) {
-            n++;
-            if (n>0){
+
+            if (profit>0){
+                n++;
+                outputArray5[n] = true;
+
+            }
+            else {
                 outputArray5[n] = true;
             }
         }
