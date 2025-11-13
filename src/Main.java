@@ -90,7 +90,7 @@ public class Main {
             }
             else {
                 outputArray4[m] = false;
-                break;
+              m++;
             }
 
         }
@@ -99,18 +99,16 @@ public class Main {
 
         System.out.println("Задача 5");
         int [] inputArray5= {45000, 0, 200000, 0,300};
-        boolean [] outputArray5= new boolean [5];
+        int [] outputArray5= new int [5];
         int n=0;
         for  (int profit : inputArray5) {
 
             if (profit>0){
                 n++;
-                outputArray5[n] = true;
 
             }
-            else {
-                outputArray5[n] = true;
-            }
+            outputArray5[0]=n;
+
         }
         System.out.println(Arrays.toString(outputArray5));
 
